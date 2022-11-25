@@ -1,12 +1,9 @@
 Processing: Visa MDB Charge Back process
-
 Department: Electronic Product Operations
 
 Dear Team, 
 
-Please be informed that MDB Charge Back report for the day is available.
-
-Kindly find attached for your review.
+Please be informed that MDB Charge Back report for ReportDate has been sent to the Acquiring Team.
 
 Best Regards,
 

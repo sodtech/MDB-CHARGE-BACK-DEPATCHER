@@ -1,20 +1,11 @@
 Processing: Visa MDB Charge Back process
-
 Department: Electronic Product Operations
 
-Dear Team, 
+Dear Acquiring Team, 
 
-please follow the following steps:
-1. Log on to uipath Orchestrator 
-2. Go to Storage bucket and Navigate to MDB folder
-3. Download the MDB_Worklog Excel file and Treat
-4. Upload the file back to BitBucket (NB: Do not change the File Name)
-5. Navigate to Action center and Click on Unassigned
-6. Assign the task to your self
-7. Click on Pending and select the task
-8. A form will apper please select completed and submit the form to continue
+The MDB Charge Back Report for ReportDate is available for you to treat.
 
-For more clearity please contact the Visa Bot Team Support.
+Please, find attached for the report.
 
 Best Regards,
 
