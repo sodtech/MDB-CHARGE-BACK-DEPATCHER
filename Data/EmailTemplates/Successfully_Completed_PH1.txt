@@ -5,6 +5,12 @@ Dear Acquiring Team,
 
 The MDB Charge Back Report for ReportDate is available for you to treat.
 
+Please, after the report has been treated. Below are steps required to be taken;
+
+1.Log on to Uipath Cloud Orchestrator.
+2.Navigate Storage Bucket.
+3.Click the MDB Folder and Upload the Treated Report. Please do not change the File Name.
+
 Please, find attached for the report.
 
 Best Regards,
