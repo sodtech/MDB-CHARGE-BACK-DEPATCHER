@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="783,1493" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.Collections;assembly=mscorlib" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:si="clr-namespace:System.IO;assembly=mscorlib" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="765,1453" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.Collections;assembly=mscorlib" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:si="clr-namespace:System.IO;assembly=mscorlib" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="75">
       <x:String>System.Activities</x:String>
@@ -44,34 +44,7 @@
       <x:String>UiPath.Excel.Activities.Business</x:String>
       <x:String>UiPath.Shared.Activities.Design.Converters</x:String>
       <x:String>UiPath.Shared.Activities.Design.Controls</x:String>
-      <x:String>UiPath.Persistence.Activities.Design</x:String>
-      <x:String>UiPath.Persistence.Activities.Design.Utilities</x:String>
-      <x:String>UiPath.Persistence.Activities.Design.Properties</x:String>
-      <x:String>UiPath.Persistence.Activities.Design.Models</x:String>
-      <x:String>UiPath.Persistence.Activities.Design.Editors</x:String>
-      <x:String>UiPath.Persistence.Activities.Design.Designers</x:String>
-      <x:String>UiPath.Persistence.Activities.Design.ApiRegistration</x:String>
-      <x:String>UiPath.Shared.Telemetry</x:String>
       <x:String>UiPath.Shared.Localization</x:String>
-      <x:String>UiPath.Shared.Extension</x:String>
-      <x:String>UiPath.Persistence.Activities</x:String>
-      <x:String>UiPath.Persistence.Activities.Utilities</x:String>
-      <x:String>UiPath.Persistence.Activities.Telemetry</x:String>
-      <x:String>UiPath.Persistence.Activities.Tasks</x:String>
-      <x:String>UiPath.Persistence.Activities.Queue</x:String>
-      <x:String>UiPath.Persistence.Activities.Properties</x:String>
-      <x:String>UiPath.Persistence.Activities.Model.Task</x:String>
-      <x:String>UiPath.Persistence.Activities.Localization</x:String>
-      <x:String>UiPath.Persistence.Activities.Job</x:String>
-      <x:String>UiPath.Persistence.Activities.FormTask</x:String>
-      <x:String>UiPath.Persistence.Activities.ExternalTask</x:String>
-      <x:String>UiPath.Persistence.Activities.Extensions</x:String>
-      <x:String>UiPath.Persistence.Activities.Delay</x:String>
-      <x:String>UiPath.Persistence.Activities.BaseTask</x:String>
-      <x:String>UiPath.Orchestrator.Service</x:String>
-      <x:String>UiPath.Orchestrator.Service.Interfaces</x:String>
-      <x:String>UiPath.Orchestrator.Service.HttpHandlers</x:String>
-      <x:String>UiPath.Orchestrator.Service.Extensions</x:String>
       <x:String>UiPath.Core.Activities.Storage</x:String>
       <x:String>UiPath.Core.Activities.Orchestrator</x:String>
       <x:String>System.Security</x:String>
@@ -129,7 +102,6 @@
       <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.Persistence.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Orchestrator.Service</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <sap:WorkflowViewStateService.ViewState>
