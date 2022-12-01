@@ -1,4 +1,4 @@
-Processing: Visa MDB Charge Back process
+Processing: Credit Voucher process
 Department: Electronic Product Operations
 
 Dear Team, 
