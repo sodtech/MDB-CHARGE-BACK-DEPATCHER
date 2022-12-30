@@ -5,7 +5,7 @@
     <x:Property Name="in_reportDate" Type="InArgument(x:String)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>689,1094</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>682,465</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -101,7 +101,7 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Send_Job_Report" sap:VirtualizedContainerService.HintSize="518,1029" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Send_Job_Report" sap:VirtualizedContainerService.HintSize="473,389" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="ProcessingFilePath" />
       <Variable x:TypeArguments="x:String" Name="TodayTimeStamp" />
@@ -115,7 +115,7 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message Dispute" sap:VirtualizedContainerService.HintSize="476,51" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
+    <ui:LogMessage DisplayName="Log Message Dispute" sap:VirtualizedContainerService.HintSize="431,51" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
       <ui:LogMessage.Message>
         <InArgument x:TypeArguments="x:Object">
           <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_76">"Sending Report to Dispute Team Started"</mca:CSharpValue>
@@ -128,7 +128,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
-    <ui:MultipleAssign DisplayName="Multiple Assign Wf Variables" sap:VirtualizedContainerService.HintSize="476,100" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+    <ui:MultipleAssign DisplayName="Multiple Assign Wf Variables" sap:VirtualizedContainerService.HintSize="431,100" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_9">
@@ -139,7 +139,7 @@
             </ui:AssignOperation.To>
             <ui:AssignOperation.Value>
               <InArgument x:TypeArguments="x:String">
-                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_98">Path.Combine(in_Config["ProcessingFolderPath"].ToString(),in_reportDate+"_MDB_WorkLog.xlsx")</mca:CSharpValue>
+                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_112">Path.Combine(in_Config["ProcessingFolderPath"].ToString(),"MDB_WorkLog_"+in_reportDate+".xlsx")</mca:CSharpValue>
               </InArgument>
             </ui:AssignOperation.Value>
           </ui:AssignOperation>
@@ -152,14 +152,14 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:MultipleAssign>
-    <Sequence DisplayName="Send Mail To Dispute Team" sap:VirtualizedContainerService.HintSize="476,706" sap2010:WorkflowViewState.IdRef="Sequence_5">
+    <Sequence DisplayName="Send Mail To Dispute Team" sap:VirtualizedContainerService.HintSize="431,66" sap2010:WorkflowViewState.IdRef="Sequence_5">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="SubjectMail" />
         <Variable x:TypeArguments="x:String" Name="EmailBody" />
       </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
@@ -171,7 +171,7 @@
         </ui:RenameFileX.FilePath>
         <ui:RenameFileX.NewName>
           <InArgument x:TypeArguments="x:String">
-            <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_100">Path.Combine(in_Config["ProcessingFolderPath"].ToString(),in_reportDate+"_MDB_WorkLog.xlsx")</mca:CSharpValue>
+            <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_113">ProcessingFilePath</mca:CSharpValue>
           </InArgument>
         </ui:RenameFileX.NewName>
         <sap:WorkflowViewStateService.ViewState>
@@ -218,7 +218,7 @@
           </InArgument>
         </Assign.Value>
       </Assign>
-      <uma:Office365ApplicationScope CertificateAsBase64="{x:Null}" CertificatePassword="{x:Null}" ContinueOnError="{x:Null}" Password="{x:Null}" SecureApplicationSecret="{x:Null}" SecurePassword="{x:Null}" Timeout="{x:Null}" Username="{x:Null}" AuthenticationType="ApplicationIdAndSecret" DisplayName="Microsoft Office 365 Scope" Environment="Global" sap:VirtualizedContainerService.HintSize="434,51" sap2010:WorkflowViewState.IdRef="Office365ApplicationScope_1" OAuthApplication="UiPath" Services="Mail">
+      <uma:Office365ApplicationScope CertificateAsBase64="{x:Null}" CertificatePassword="{x:Null}" ContinueOnError="{x:Null}" Password="{x:Null}" SecureApplicationSecret="{x:Null}" SecurePassword="{x:Null}" Timeout="{x:Null}" Username="{x:Null}" AuthenticationType="ApplicationIdAndSecret" DisplayName="Microsoft Office 365 Scope" Environment="Global" sap:VirtualizedContainerService.HintSize="434,137" sap2010:WorkflowViewState.IdRef="Office365ApplicationScope_1" OAuthApplication="UiPath" Services="Mail">
         <uma:Office365ApplicationScope.ApplicationId>
           <InArgument x:TypeArguments="x:String">
             <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_101">in_Config["Office365ApplicationID"].ToString()</mca:CSharpValue>
@@ -234,7 +234,7 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="mg:GraphServiceClient" Name="ParentScope" />
             </ActivityAction.Argument>
-            <umam:SendMail AttachmentsCollection="{x:Null}" Bcc="{x:Null}" ReplyTo="{x:Null}" DisplayName="Send Mail" sap:VirtualizedContainerService.HintSize="434,352" sap2010:WorkflowViewState.IdRef="SendMail_1" Importance="Normal" IsBodyHTML="False" IsDraft="False">
+            <umam:SendMail AttachmentsCollection="{x:Null}" Bcc="{x:Null}" ReplyTo="{x:Null}" DisplayName="Send Mail" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="SendMail_1" Importance="Normal" IsBodyHTML="False" IsDraft="False">
               <umam:SendMail.Account>
                 <InArgument x:TypeArguments="x:String">
                   <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_110">in_Config["RobotEmailAddress"].ToString()</mca:CSharpValue>
@@ -274,7 +274,7 @@
               </umam:SendMail.To>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
@@ -288,7 +288,7 @@
         </uma:Office365ApplicationScope.Tenant>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
